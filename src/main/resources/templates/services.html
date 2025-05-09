@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-th-replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
+  <title>Services</title>
 </head>
 <body>
-<div th:fragment="af">
-  <h1>this is service fragment</h1>
+<div id = "content" >
+    <h1>Services</h1>
+    <p>This is services page</p>
 </div>
+<script>
+    console.log("services page");
+</script>
 </body>
 </html>
